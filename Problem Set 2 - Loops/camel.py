@@ -27,4 +27,9 @@ def convertCamelToSnake(camel):
     return "".join(snake)
 
 
+def convertCamelToSnakeShort(camel):
+    """Still using list methods - But as one liner"""
+    return "".join(["_" + camel.lower() if camel.isupper() else s for s in camel])
+
+
 main()
