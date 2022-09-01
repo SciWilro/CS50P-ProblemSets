@@ -22,7 +22,7 @@ def is_valid(s):
     return all([valid_a(s), valid_b(s), valid_c(s), valid_numbers(s)])
 
 
-# First 3 sub-functions can written inside is_valid return line - Harder to read though
+# First 3 sub-functions can written inside is_valid() return line - Harder to read though
 def valid_a(s):
     return s[0:2].isalpha()
 
