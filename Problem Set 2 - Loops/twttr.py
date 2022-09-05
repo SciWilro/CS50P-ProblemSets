@@ -32,5 +32,5 @@ def devowel_short(usr_input):
     return "".join([s for s in usr_input if s not in banned_letters]).strip()
 
 
-if __name__ in "__main__":
+if __name__ == "__main__":
     main()
