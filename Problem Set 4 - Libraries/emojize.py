@@ -1,9 +1,9 @@
-"""translates emoji codes to emoji symbol
-    Args:
-        usr_input (str): Eg :thumbs_up:
-    Returns:
-        s (str): 👍
-see list here: [emoji list](https://carpedm20.github.io/emoji/all.html?enableList=enable_list_alias)
+"""Translates emoji codes to emoji symbol  
+Args:
+    usr_input (str): Eg :thumbs_up:
+Returns:
+    s (str): 👍
+see [emoji code list](https://carpedm20.github.io/emoji/all.html?enableList=enable_list_alias)
 """
 __author__ = "Wilro - https://github.com/SciWilro"
 
