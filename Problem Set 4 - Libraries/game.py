@@ -11,16 +11,22 @@ import random
 
 def main():
     while True:
-        n = int(input("Level: "))
-        if n > 0:
-            break
+        try:
+            n = int(input("Level: "))
+            if n > 0:
+                break
+        except ValueError:
+            continue  # Not really needed
 
     answer = gen_answer(n)
 
     while True:
-        guess = int(input("Guess: "))
-        if guess > 0:
-            guess_answer(guess, answer)
+        try:
+            guess = int(input("Guess: "))
+            if guess > 0:
+                guess_answer(guess, answer)
+        except ValueError:
+            continue  # Not really needed
 
 
 def gen_answer(n: int) -> int:
