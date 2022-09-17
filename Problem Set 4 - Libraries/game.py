@@ -1,8 +1,8 @@
 """Guessing Game    
 Args:
     n (int): level ( answer 1 <= n)
-Returns:
-    s (str): Too small!, Too large!, or Just right!
+Output:
+    Prints: Too small!, Too large!, or Just right!
 """
 __author__ = "Wilro - https://github.com/SciWilro"
 
@@ -19,7 +19,7 @@ def main():
 
     while True:
         guess = int(input("Guess: "))
-        if n > 0:
+        if guess > 0:
             guess_answer(guess, answer)
 
 
@@ -34,7 +34,7 @@ def guess_answer(guess, answer):
     elif guess > answer:
         print("Too large!")
     elif guess < answer:
-        print("Too samll!")
+        print("Too small!")
 
 
 if __name__ == "__main__":
