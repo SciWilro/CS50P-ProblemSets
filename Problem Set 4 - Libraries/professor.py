@@ -1,4 +1,4 @@
-""" Little Professor Maths Game  
+""" Little Professor Maths Game
 [Info](https://en.wikipedia.org/wiki/Little_Professor)
 Prompts user for level (int) 1, 2, OR 3
 3 Tries per problem -> Displays answer
@@ -21,15 +21,16 @@ def main():
     for x in range(0, t):
         counter = 0
         while counter < 3:
-            print(plist[x][0])
-            answer = int(input())
+            question = plist[x][0]
+            answer = int(input(question))
             if answer != plist[x][1]:
                 print("EEE")
                 counter += 1
+                if counter == 3:
+                    print((plist[x][0]).strip(), plist[x][1])
             else:
                 score = score + 1
                 break
-        print(plist[x][0], plist[x][1])
     print("Score: ", score)
 
 
@@ -40,7 +41,6 @@ def get_level():
     while True:
         level = input("Level?: ")
         if level in ["1", "2", "3"]:
-            print("Level string matches")
             return int(level)
 
 
@@ -50,11 +50,11 @@ def generate_integer(level):
     else:
         match level:
             case 1:
-                return random.randrange(1, 10)
+                return random.randrange(0, 10)
             case 2:
-                return random.randrange(1, 100)
+                return random.randrange(10, 100)
             case 3:
-                return random.randrange(1, 1000)
+                return random.randrange(100, 1000)
 
 
 def gen_problems(level: int, t=10):
