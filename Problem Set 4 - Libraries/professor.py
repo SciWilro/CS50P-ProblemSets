@@ -45,6 +45,14 @@ def get_level():
 
 
 def generate_integer(level):
+    """Generates integer of level digits
+    Args:
+        level (int): 1, 2, 3
+    Raises:
+        ValueError: level must be 1, 2, or 3
+    Returns:
+        (int): random integer of level digits
+    """
     if level not in [1, 2, 3]:
         raise ValueError("Level must be either 1, 2, OR 3")
     else:
@@ -58,8 +66,13 @@ def generate_integer(level):
 
 
 def gen_problems(level: int, t=10):
-    #   returns list with question string and int answer
-    # length of list based on level (int)
+    """Generate list of question and answers
+    Args:
+        level (int): 1, 2, or 3
+        t (int, optional): Number of questions - Defaults to 10.
+    Returns:
+        (list): list of questions (str) and answers (int)
+    """
     plist = [None for x in range(t)]
     for z in range(0, t):
         a = generate_integer(level)
