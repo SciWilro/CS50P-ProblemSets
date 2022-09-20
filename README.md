@@ -10,7 +10,7 @@ My completed work for [CS50P Course](https://www.edx.org/course/cs50s-introducti
 - [x] Loops
 - [x] Exceptions
 - [x] Libraries
-- [ ] Unit Tests
+- [x] Unit Tests
 - [ ] File I/O
 - [ ] Regular Expressions
 - [ ] Object-Oriented Programming
