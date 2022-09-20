@@ -1,23 +1,25 @@
 __author__ = "Wilro - https://github.com/SciWilro"
+
 import pytest
 
 from bank import value
 
 
-def test_hello():
+# test_bank catches bank.py with incorrect values
+def test_values():
     assert value("hello") == 0
-    assert value("Hello") == 0
+    assert value("hi") == 20
+    assert value("bonjour") == 100
+
+
+# test_bank catches bank.py without case-insensitivity
+def test_case():
     assert value("HELLO") == 0
-    assert value(" Hello ") == 0
-
-
-def test_h():
     assert value("Hi") == 20
-    assert value("HI") == 20
     assert value("hi") == 20
 
 
+# test_bank catches bank.py not allowing for entire phrase
 def test_other():
-    assert value("bonjour") == 100
     assert value("asalaam alaikum") == 100
-    assert value("konnichiwa") == 100
+    assert value("What's Up My Dude") == 100
