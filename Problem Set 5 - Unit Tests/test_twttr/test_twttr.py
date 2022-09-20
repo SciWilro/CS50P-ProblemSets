@@ -1,3 +1,4 @@
+__author__ = "Wilro - https://github.com/SciWilro"
 import pytest
 
 from twttr import shorten
