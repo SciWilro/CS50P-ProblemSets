@@ -1,7 +1,7 @@
 """
 Module takes str as input and removes all vowels (case insensitive)
     Args:
-        usr_input (str):
+        word (str):
     Returns:
         str: str with all vowels removed
 TODO Don't remove certain single letter words like 'A' or 'I'
@@ -14,12 +14,19 @@ banned_letters = list("AaEeOoUuIi")
 
 
 def main():
-    usr_input = input("Input string:")
-    print(devowel(usr_input))
+    word = input("Input string:")
+    print(shorten(word))
 
 
-def devowel(usr_input):
-    return "".join([s for s in usr_input if s not in banned_letters]).strip()
+def shorten(word: str) -> str:
+    output = ""
+    try:
+        for s in word.strip():
+            if s not in banned_letters:
+                output += s
+    except AttributeError:
+        raise TypeError("shorten function expects string variable as arguement")
+    return output.strip()
 
 
 if __name__ == "__main__":
