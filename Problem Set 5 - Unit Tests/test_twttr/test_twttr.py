@@ -5,7 +5,6 @@
 # See the commented lines
 
 import pytest
-
 from twttr import shorten
 
 
