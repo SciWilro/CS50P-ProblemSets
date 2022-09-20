@@ -3,6 +3,7 @@
 # Was tricky to work out what to do here
 # But the results of check50 gives the scenarios to check for
 # No need to copy or rewrite your old twttr.py script
+# As submit50 and check50 don't use YOUR twttr.py file
 # See the commented lines
 
 import pytest
