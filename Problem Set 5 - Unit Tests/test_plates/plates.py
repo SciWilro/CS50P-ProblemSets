@@ -6,8 +6,6 @@ __author__ = "Wilro - https://github.com/SciWilro"
 #     The first number used cannot be a ‘0’.
 # 4) No periods, spaces, or punctuation marks are allowed.
 
-# from curses.ascii import isdigit
-
 
 def main():
     plate = input("Plate: ")
