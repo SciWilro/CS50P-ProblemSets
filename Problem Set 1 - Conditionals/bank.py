@@ -1,20 +1,21 @@
 # https://cs50.harvard.edu/python/2022/psets/1/bank/
+# Rewritten based on Problem Set 5 - Unit Tests
 __author__ = "Wilro - https://github.com/SciWilro"
 
 
 def main():
-    answer = format_answer(input("Greeting?: "))
+    print_value = value(input("Greeting?: "))
+    print(f"${print_value}")
 
-    if answer.startswith("hello"):
-        print("$0")
-    elif answer.startswith("h"):
-        print("$20")
+
+def value(greeting: str) -> int:
+    greeting = greeting.strip().lower()
+    if greeting.startswith("hello"):
+        return 0
+    elif greeting.startswith("h"):
+        return 20
     else:
-        print("$100")
-
-
-def format_answer(input: str) -> str:
-    return input.strip().lower()
+        return 100
 
 
 main()
