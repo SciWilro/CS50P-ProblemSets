@@ -13,8 +13,10 @@ def main():
         sys.exit("Expects 1 command-line arguement")
     if sys.argv[1][-3::] != ".py":
         sys.exit("Not a Python File")
-
-    print(count_lines(sys.argv[1]))
+    try:
+        print(count_lines(sys.argv[1]))
+    except FileNotFoundError:
+        sys.exit("File not found")
 
 def count_lines(filename):
     counter = 0
