@@ -4,6 +4,8 @@ Takes on command-line arg of the path to Pinocchio’s format and outputs table 
     sys.argv[1] (str): path to csv file
 Output:
     Prints: Table formatted with tabulate package
+Extra:
+    tabulate package [info](https://pypi.org/project/tabulate/)
 """
 import sys
 from tabulate import tabulate
