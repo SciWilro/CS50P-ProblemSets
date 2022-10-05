@@ -1,1 +1,8 @@
-# Empty dummy file
+# dummy file
+
+
+def main():
+    print("Hello")
+
+if __name__ == "__main__":
+    main()
