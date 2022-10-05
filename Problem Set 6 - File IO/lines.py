@@ -21,8 +21,8 @@ def count_lines(filename):
     with open(filename, "r") as file:
         file_lines = file.readlines()
         for line in file_lines:
-            if line.startswith("#") is True or line.rstrip() == "":
-                # Using rstrip() instead of lstrinp() to remove newline code at end of line
+            if line.strip().startswith("#") is True or line.rstrip() == "":
+                # Using strip() to remove indentation before comment
                 pass 
             else:
                 counter += 1
