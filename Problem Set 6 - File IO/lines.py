@@ -10,7 +10,7 @@ import sys
 
 def main():
     if len(sys.argv) != 2:
-        sys.exit("Expects 1 command-line arguement")
+        sys.exit("Expects 1 command-line arguments")
     if sys.argv[1][-3::] != ".py":
         sys.exit("Not a Python File")
     try:
