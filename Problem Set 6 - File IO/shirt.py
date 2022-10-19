@@ -6,6 +6,11 @@ Args:
     sys.argv[2] (str): name (or path) of a JPEG or PNG to write
 '''
 
+# To get source images:
+# wget https://cs50.harvard.edu/python/2022/psets/6/shirt/shirt.png
+# wget https://cs50.harvard.edu/python/2022/psets/6/shirt/muppets.zip
+# unzip muppets.zip
+
 import sys
 import os
 from PIL import Image
