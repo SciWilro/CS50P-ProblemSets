@@ -95,11 +95,11 @@ Note that `*` and `+` are “greedy,” insofar as “they match as much text as
 
 ```python
 string = 'He said "I havent met any "aliens"."'
-pattern = r'(.*?)"(.*)".*'
-print(re.search(pattern, string).group(2))
+pattern = r'(?:.*?)"(.*)".*'
+print(re.search(pattern, string).group(1))
 # >>> I havent met any "aliens".
 
-pattern = r'(.*)"(.*)".*'
-print(re.search(pattern, string).group(2))
+pattern = r'(?:.*)"(.*)".*'
+print(re.search(pattern, string).group(1))
 # >>> .
 ```
