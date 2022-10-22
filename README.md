@@ -12,7 +12,7 @@ My completed work for [CS50P Course](https://www.edx.org/course/cs50s-introducti
 - [x] Libraries
 - [x] Unit Tests
 - [x] File I/O
-- [ ] Regular Expressions
+- [x] Regular Expressions
 - [ ] Object-Oriented Programming
 - [ ] Et Cetera
 ---
