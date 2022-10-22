@@ -44,6 +44,8 @@ To make sure python doesnt interpret escape characters we specify the pattern as
 | (...)     | a group                       |
 | (?:...)    | non-capturing version         |
 |       	|               	            |
+| \b      	| boundary           |
+| \w      	| words + numbers + _           |
 | \w      	| words + numbers + _           |
 | \W      	| **NOT** words + numbers + _   |
 | \d      	| decimal digit                 |
