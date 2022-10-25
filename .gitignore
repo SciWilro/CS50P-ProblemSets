@@ -1,3 +1,4 @@
+project
 *.pytest_cache
 *__pycache__*
 Problem Set 5 - Unit Tests/test_fuel/fuel.py
