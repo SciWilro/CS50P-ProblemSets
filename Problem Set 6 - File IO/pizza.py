@@ -19,7 +19,7 @@ def main():
     except FileNotFoundError:
         sys.exit("File not found")
 
-    print(tabulate(table, headers = "firstrow"))
+    print(tabulate(table, headers = "firstrow", tablefmt="grid"))
 
 def get_csv_table(filename):
     '''
